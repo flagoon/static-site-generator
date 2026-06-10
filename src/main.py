@@ -36,7 +36,7 @@ def main() -> None:
         dir_path_content,
         template_path,
         dir_path_public,
-        f"/`{basepath[1]}",
+        f"{basepath[1]}",
     )
 
 main()
