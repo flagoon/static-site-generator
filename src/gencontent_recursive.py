@@ -2,7 +2,7 @@ import os
 from gencontent import generate_page
 
 def generate_page_recursive(content_path, template_path, dest_path, basepath):
-    print(f"gen_recursive for: {content_path} to {dest_path}")
+    print(f"gen_recursive for: {content_path} to {dest_path} with {basepath}")
     folder_contents = os.listdir(content_path)
     for content in folder_contents:
         if os.path.isfile(content_path + "/" + content):
