@@ -23,8 +23,8 @@ basepath = sys.argv if sys.argv != None else "/"
 
 
 def main() -> None:
+    print(sys.argv)
     print("Deleting public directory...")
-    print(basepath[1])
     if os.path.exists(dir_path_public):
         shutil.rmtree(dir_path_public)
 
@@ -36,7 +36,7 @@ def main() -> None:
         dir_path_content,
         template_path,
         dir_path_public,
-        f"{basepath[1]}",
+        basepath[1]
     )
 
 main()
